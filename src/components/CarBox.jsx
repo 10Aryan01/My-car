@@ -6,7 +6,6 @@ function CarBox({ data, carID }) {
     <>
       {data[carID].map((car, id) => (
         <div key={id} className="box-cars">
-          {/* car */}
           <div className="pick-car">
             {carLoad && <span className="loader"></span>}
             <img
@@ -15,8 +14,7 @@ function CarBox({ data, carID }) {
               alt="car_img"
               onLoad={() => setCarLoad(false)}
             />
-          </div>
-          {/* description */}
+          </div>     
           <div className="pick-description">
             <div className="pick-description__price">
               <span>{car.price}rs</span>/ rent per day

@@ -3,7 +3,7 @@ import CarBox from "./CarBox";
 import { CAR_DATA } from "./CarData";
 
 function PickCar() {
-  const [active, setActive] = useState("SecondCar");
+  const [active, setActive] = useState("FirstCar");
   const [colorBtn, setColorBtn] = useState("btn1");
 
   const btnID = (id) => {
